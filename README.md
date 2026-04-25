@@ -7,6 +7,7 @@ Convert a Logitech Driving Force shifter into a standalone USB game controller u
 This project reads the Logitech shifter directly, detects gears 1–6 plus reverse, and presents them to the PC as USB joystick buttons. No Logitech wheel base is required.
 
 
+
 Hardware Required -
 
 Raspberry Pi Pico
@@ -22,6 +23,7 @@ Optional: 10k resistor for DB9 pin 3 pull-up, if required
 Soldering tools or breadboard/jumper wires for testing
 
 
+
 DB9 Shifter Pinout
 
 DB9 pin 4  -> Pico GP26 / ADC0, physical pin 31
@@ -35,6 +37,7 @@ DB9 pin 6  -> Pico GND
 DB9 pin 9  -> Pico 3V3 OUT, physical pin 36 - DO NOT USE 5V!
 
 DB9 pin 3  -> DB9 pin 7
+
 
 
 SETUP-
@@ -54,6 +57,7 @@ Add this to Additional Boards Manager URLs:
 https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
 
 
+
 Part 1 — Gear Calibration
 
 Used to read raw X/Y/reverse values from the shifter and confirm the wiring is correct.
@@ -71,6 +75,7 @@ How to use:
 5. Type p to print the current calibration table.
 
 
+
 Part 2 — Neutral Calibration / Gear Detection
 
 Used to test the neutral dead-band and gear-detection logic before enabling USB joystick output.
@@ -78,9 +83,11 @@ Used to test the neutral dead-band and gear-detection logic before enabling USB 
 Enter your measured calibration figures in here.
 
 
+
 Part 3 — Final USB Joystick Firmware
 
 The final firmware. This turns the Pico into a USB game controller. This still requires the calibration figures.
+
 
 
 FINAL TESTING - 
@@ -90,6 +97,7 @@ Windows - Press Start - Search for "run": - Type joy.cpl - Select the Pico contr
 Move through each gear and confirm buttons 1–7 activate correctly.
 
 ENJOY!
+
 
 
 TROUBLESHOOTING
@@ -143,6 +151,7 @@ USB Stack is set to Pico SDK
 The final sketch includes #include <Joystick.h>
 
 The Pico has been unplugged and reconnected after flashing.
+
 
 
 Disclaimer
