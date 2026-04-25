@@ -18,8 +18,6 @@ DB9 connector or suitable cable/adapter
 
 Hook-up wire
 
-Optional: 10k resistor for DB9 pin 3 pull-up, if required
-
 Soldering tools or breadboard/jumper wires for testing
 
 
