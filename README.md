@@ -36,6 +36,9 @@ DB9 pin 9  -> Pico 3V3 OUT, physical pin 36 - DO NOT USE 5V!
 
 DB9 pin 3  -> DB9 pin 7
 
+<img width="3000" height="4000" alt="1000024507" src="https://github.com/user-attachments/assets/aa4ae67e-f3b8-47a9-ab17-0f65ee90ea21" />
+<img width="2445" height="2431" alt="1000024503" src="https://github.com/user-attachments/assets/3d22a132-3123-48ad-994f-de2cbc58b9a8" />
+
 
 
 SETUP-
